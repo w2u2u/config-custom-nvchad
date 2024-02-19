@@ -4,15 +4,15 @@ outline.setup {
   -- Your setup opts here (leave empty to use defaults)
   outline_window = {
     auto_close = true,
-    --   auto_jump = true,
-    -- center_on_jump = true,
+    auto_jump = true,
+    center_on_jump = true,
   },
   outline_items = {
     show_symbol_lineno = true,
   },
   preview_window = {
     show_numbers = false,
-    auto_preview = true,
+    auto_preview = false,
     open_hover_on_preview = true,
   },
 }

@@ -1,7 +1,7 @@
 return {
   -- configuration goes here
   arg = "leetcode.nvim",
-  lang = "ruby",
+  lang = "rust",
   injector = {
     ["golang"] = {
       before = { "package main", "" },
