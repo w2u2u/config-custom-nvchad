@@ -3,9 +3,10 @@ local options = {
     enable = true,
   },
   ensure_installed = {
+    "rust",
     "ruby",
     "go",
-    "rust",
+    "python",
     "html",
     "css",
     "javascript",

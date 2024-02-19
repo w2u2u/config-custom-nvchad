@@ -4,7 +4,7 @@ local mason_lsp = require "mason-lspconfig"
 mason.setup {
   ui = {
     keymaps = {
-      apply_language_filter = "<M-f>",
+      apply_language_filter = "<C-f>",
     },
   },
 }
@@ -17,6 +17,9 @@ mason_lsp.setup {
     "rubocop",
     "solargraph",
     "gopls",
+    "pyright",
+    "mypy",
+    "ruff",
     "html",
     "cssls",
     "tsserver",

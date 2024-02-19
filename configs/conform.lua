@@ -12,6 +12,7 @@ conform.setup {
   formatters_by_ft = {
     ruby = { "rubyfmt" },
     go = { "gofmt", "goimports", "golines" },
+    python = { "mypy", "ruff" },
     lua = { "stylua" },
     javascript = { "prettier" },
     typescript = { "prettier" },
