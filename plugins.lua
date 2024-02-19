@@ -106,13 +106,6 @@ local plugins = {
     },
   },
   {
-    "karb94/neoscroll.nvim",
-    event = { "BufReadPre", "BufNewFile" },
-    config = function()
-      require("neoscroll").setup {}
-    end,
-  },
-  {
     "lukas-reineke/indent-blankline.nvim",
     main = "ibl",
     config = function()

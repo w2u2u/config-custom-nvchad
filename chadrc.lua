@@ -13,6 +13,10 @@ M.ui = {
     theme = "minimal",
     -- separator_style = "round",
   },
+  cmp = {
+    style = "default",
+    selected_item_bg = "colored",
+  },
 }
 
 M.plugins = "custom.plugins"
