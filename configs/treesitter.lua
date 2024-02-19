@@ -9,6 +9,7 @@ local options = {
     "html",
     "css",
     "javascript",
+    "typescript",
   },
   incremental_selection = {
     enable = true,

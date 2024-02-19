@@ -156,25 +156,21 @@ local plugins = {
       "nvim-tree/nvim-web-devicons",
     },
     lazy = "leetcode.nvim" ~= vim.fn.argv()[1],
-    opts = {
-      -- configuration goes here
-      arg = "leetcode.nvim",
-      lang = "ruby",
-      injector = {
-        ["golang"] = {
-          before = { "package main", "" },
-        },
-      },
-    },
+    opts = function()
+      return require "custom.configs.leetcode"
+    end,
   },
   {
     "rcarriga/nvim-notify",
     config = function()
-      require("notify").setup {
-        stages = "fade",
-        render = "compact",
-        background_colour = "#000000",
-      }
+      return require "custom.configs.notify"
+    end,
+  },
+  {
+    "stevearc/dressing.nvim",
+    lazy = false,
+    config = function()
+      return require "custom.configs.dressing"
     end,
   },
 }
